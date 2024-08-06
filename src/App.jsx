@@ -1,23 +1,21 @@
 import { Features } from './components/features/Features';
 import { Footer } from './components/footer/Footer';
-import { Header } from './components/Header';
+import { Header } from './components/header/Header';
 import { Hero } from './components/hero/Hero';
 import { Sponsors } from './components/sponsors/Sponsors';
 
 function App() {
-
   return (
     <>
-      <Header />  
-     
+      <Header />
       <main>
         <Hero />
         <Features />
-        <Sponsors /> 
+        <Sponsors />
       </main>
       <Footer />
     </>
   );
 }
 
-export default App;
+export default App; 
