@@ -1,26 +1,28 @@
+import './Hero.css';
 import logo from '/vite.svg';
 
 export function Hero() {
   const imgStyle = {
-      height: '15rem',
+      height: '24rem',
+      width: '100%',
   };
   // style="background-color: red; font-size: 16px;"
   // style={{backgroundColor: "red"; font-size: "16px"}}
 
   const title = Math.random() > 0.5
     ? 'Vite next generation frontend tooling'
-    : 'inito!!!';
+    : 'Finito!!!';
 
   return (
-      <section>
-          <div>
-            <h1>{title}</h1>
-            <p>Get ready for a development environment that can finally catch up with you.</p>
-            <div>
-              <a href="#">Get started</a>
-              <a href="#">Why Vite?</a>
-              <a href="#">View on Github</a>
-              <a href="#">⚡ViteConf 24!</a>
+      <section className='hero'>
+          <div className='textContent'>
+            <h1 className='title'>{title}</h1>
+            <p className='description'>Get ready for a development environment that can finally catch up with you.</p>
+            <div className='btnList'>
+              <a className='btn' href="#">Get started</a>
+              <a className='btn' href="#">Why Vite?</a>
+              <a className='btn' href="#">View on Github</a>
+              <a className='btn' href="#">⚡ViteConf 24!</a>
             </div>
           </div>
           <img src={logo} style={imgStyle} alt="Vite image" />
