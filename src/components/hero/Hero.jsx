@@ -1,4 +1,5 @@
-import './Hero.css';
+import { Button } from '../button/Button';
+import style from './Hero.module.css';
 import logo from '/vite.svg';
 
 export function Hero() {
@@ -14,15 +15,15 @@ export function Hero() {
     : 'Finito!!!';
 
   return (
-      <section className='hero'>
-          <div className='textContent'>
-            <h1 className='title'>{title}</h1>
-            <p className='description'>Get ready for a development environment that can finally catch up with you.</p>
-            <div className='btnList'>
-              <a className='btn' href="#">Get started</a>
-              <a className='btn' href="#">Why Vite?</a>
-              <a className='btn' href="#">View on Github</a>
-              <a className='btn' href="#">⚡ViteConf 24!</a>
+      <section className={style.hero}>
+          <div className={style.textContent}>
+            <h1 className={style.title}>{title}</h1>
+            <p className={style.description}>Get ready for a development environment that can finally catch up with you.</p>
+            <div className={style.btnList}>
+              <Button url="#" text="Get started" />
+              <Button url="#" text="Why Vite?" />
+              <Button url="#" text="View on Github" />
+              <Button url="#" text="⚡ViteConf 24!" />
             </div>
           </div>
           <img src={logo} style={imgStyle} alt="Vite image" />
